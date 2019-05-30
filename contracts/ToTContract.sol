@@ -10,5 +10,7 @@ import "../node_modules/openzeppelin-solidity/contracts/introspection/ERC165.sol
  * @dev see https://eips.ethereum.org/EIPS/eip-721
  */
 contract ToTContract is ERC721 {
-
+    constructor() public {
+        _mint(msg.sender, 1);
+    }
 }
